@@ -2,6 +2,7 @@
 using namespace std;
 
 void add(int ar[] ,int a);
+void del(int ar[] ,int a);
 
 int main(){
 	
@@ -64,6 +65,26 @@ void add(int ar[] ,int a)
 	
 	}
 
-
+void del(int ar[] ,int a)
+	{
+		int i,x;
+	cout<<"enter the number array : "<<endl;
+	for(i=0;i<=3;i++)
+	cin>>ar[i];
+	cout<<"the number array is : "<<endl;
+	for( i=0;i<=3;i++)
+	cout<<ar[i]<<" ";
+	cout<<endl;
+	cout<<"index array : "<<endl;
+	cin>>x;
+	--x;
+	for(i=x;i<4;i++)//
+	{
+		ar[i]=ar[i+1];
+	}
+	cout<<"the new array is : "<<endl;
+	for(i=0;i<3;i++)
+	cout<<ar[i]<<" ";
+	}
 
 
