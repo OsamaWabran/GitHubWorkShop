@@ -4,6 +4,7 @@ using namespace std;
 void add(int ar[] ,int a);
 void del(int ar[] ,int a);
 void sort(int ar[] ,int a);
+void search(int ar[] ,int a);
 
 int main(){
 	
@@ -133,4 +134,24 @@ void sort(int ar[] ,int a)
 	
 	}
 
-
+	void search(int ar[] ,int a)
+	{
+		int i,number,b=0;
+	cout<<"enter the number array : "<<endl;
+	for(i=0;i<=3;i++)
+	cin>>ar[i];
+	cout<<"the number array is : "<<endl;
+	for( i=0;i<=3;i++)
+	cout<<ar[i]<<" ";
+	cout<<endl;
+	cout<<"search number : ";
+	cin>>number;
+	for( i=0;i<=3;i++)
+	if(ar[i]==number)
+	b++;
+	if(b==1)
+	cout<<"found";
+	else
+	cout<<"not found";
+	
+	}
