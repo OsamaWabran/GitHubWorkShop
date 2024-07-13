@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
+void add(int ar[] ,int a);
 
 int main(){
 	
@@ -37,6 +37,33 @@ int main(){
 	} while (a>0);
 	
 }
+
+void add(int ar[] ,int a)
+	{
+		int i,x,y;
+	cout<<"enter the number array : "<<endl;
+	for(i=0;i<=3;i++)
+	cin>>ar[i];
+	cout<<"the number array is : "<<endl;
+	for( i=0;i<=3;i++)
+	cout<<ar[i]<<" ";
+	cout<<endl;
+	cout<<"index array : "<<endl;
+	cin>>x;
+	cout<<"the new number :"<<endl;
+	cin>>y;
+	x--;
+	for(i=3;i>=x;i--)//
+	{
+		ar[i+1]=ar[i];
+	}
+	ar[x]=y;
+	cout<<"the new array is : "<<endl;
+	for(i=0;i<=4;i++)
+	cout<<ar[i]<<" ";
+	
+	}
+
 
 
 
